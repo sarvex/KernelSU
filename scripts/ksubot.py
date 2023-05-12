@@ -79,9 +79,9 @@ async def main():
     print("---")
     for one in paths:
         if not os.path.exists(one):
-            print("[-] File not exist: " + one)
+            print(f"[-] File not exist: {one}")
             continue
-        print("[+] Upload: " + one)
+        print(f"[+] Upload: {one}")
         msg = await bot.send_document(CACHE_CHAT_ID, one)
         if one == paths[-1]:
             files.append(telegram.InputMediaDocument(msg.document,
