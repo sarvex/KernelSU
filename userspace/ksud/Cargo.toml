@@ -41,7 +41,7 @@ android-properties = { version = "0.2.2", features = ["bionic-deprecated"] }
 procfs = "0.15"
 
 [target.'cfg(target_os = "android")'.dependencies]
-android_logger = "0.13"
+android_logger = "0.13.3"
 
 [profile.release]
 strip = true
